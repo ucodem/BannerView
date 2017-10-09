@@ -13,7 +13,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int[] imgs = {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d};
+    //,R.drawable.c,R.drawable.d
+    private int[] imgs = {R.drawable.a,R.drawable.b};
     private List<View> viewList;
     BannerView bannerView;
 
@@ -33,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
         bannerView = (BannerView) findViewById(R.id.banner);
         bannerView.startLoop(true);
         bannerView.setViewList(viewList);
-//        bannerView.setTransformAnim(true);
+        //bannerView.setTransformAnim(false);
     }
 }

@@ -169,7 +169,7 @@ public class BannerView extends FrameLayout {
     };
 
     private void updateLinearPosition() {
-        if (viewList != null && viewList.size() != 0) {
+        if (viewList != null && viewList.size() > 1) {
             if (mLinearPosition.getChildCount() != viewSize) {
                 int diffCnt = mLinearPosition.getChildCount() - viewSize;
                 boolean needAdd = diffCnt < 0;

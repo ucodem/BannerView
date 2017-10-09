@@ -1,7 +1,7 @@
 package com.blink.test.bannerview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -10,8 +10,6 @@ import com.oragee.banners.BannerView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         }
         bannerView = (BannerView) findViewById(R.id.banner);
         bannerView.startLoop(true);
-
         bannerView.setViewList(viewList);
 //        bannerView.setTransformAnim(true);
     }
